@@ -1,0 +1,11 @@
+CC = gcc # Опции за компилация 
+CFLAGS = -Wall 
+
+strlength.out: strlength.c mystrings.c mystrings.h 
+    $(CC) $(CFLAGS) -o strlength.out strlength.c mystrings.c 
+strconcat.out: strconcat.c mystrings.c mystrings.h 
+    $(CC) $(CFLAGS) -o strconcat.out strconcat.c mystrings.c 
+strcompare.out: strcompare.c mystrings.c mystrings.h 
+    $(CC) $(CFLAGS) -o strcompare.out strcompare.c mystrings.c  
+clean: 
+    rm -f strlength.out strconcat.out strcompare.out

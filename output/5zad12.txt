@@ -1,0 +1,4 @@
+gcc -c 5zad12.c -o 5zad12.o
+ar rcs lib5zad12.a 5zad12.o
+
+gcc 5main12.c -L. -l5zad12 -o main

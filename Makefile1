@@ -1,0 +1,6 @@
+CC=gcc
+all: help.out
+help.out: main.c mystrings.c mystrings.h
+    $(CC) -o help.out main.c mystrings.c
+clean:
+    rm -f help.out
